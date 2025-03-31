@@ -1,3 +1,4 @@
+#!usr/bin/python3
 # Method that determines if all the boxes can be opened.def can_unlock_all(boxes):
 
 def can_unlock_all(boxes):
