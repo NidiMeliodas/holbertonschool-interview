@@ -9,14 +9,8 @@ Write a method that determines if all the boxes can be opened.
 
 def can_unlock_all(boxes):
     """
-    Determines if all boxes can be opened.
-    
-    Args:
-        boxes (list of list of int): A list where each index represents a box, 
-        and the list at each index contains keys to other boxes.
-    
-    Returns:
-        bool: True if all boxes can be opened, else False.
+    This function wil check if all the boxes can be opened using
+    a key found in another box
     """
     n = len(boxes)
     opened = {0}  # Start with the first box opened
