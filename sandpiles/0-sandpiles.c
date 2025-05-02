@@ -90,7 +90,7 @@ void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 {
 	int i, j;
 
-	// Sum the two grids
+	/*Sum the two grids*/
 	for (i = 0; i < SIZE; i++)
 	{
 		for (j = 0; j < SIZE; j++)
@@ -99,7 +99,7 @@ void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 		}
 	}
 
-	// Topple until stable
+	/*Topple until stable*/
 	while (!is_stable(grid1))
 	{
 		print_grid(grid1);
