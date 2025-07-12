@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 import sys
 
+
 def is_safe(queen, queens):
     for r, c in enumerate(queens):
         if c == queen or abs(c - queen) == len(queens) - r:
             return False
     return True
+
 
 def solve_nqueens(n, row=0, queens=[], solutions=[]):
     if row == n:
@@ -15,6 +17,7 @@ def solve_nqueens(n, row=0, queens=[], solutions=[]):
     for col in range(n):
         if is_safe(col, queens):
             solve_nqueens(n, row + 1, queens + [col], solutions)
+
 
 def main():
     if len(sys.argv) != 2:
@@ -35,6 +38,7 @@ def main():
     solve_nqueens(n, solutions=solutions)
     for sol in solutions:
         print(sol)
+
 
 if __name__ == "__main__":
     main()
